@@ -1,4 +1,4 @@
-<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.kavispires.7wcardsearch" version="1.0.0">
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.kavispires.sevenwonderscardsearch" version="1.0.0">
   <name>7 Wonders Card Search Only</name>
   <description>Rules Clarification for cards in 7 Wonders and its expansions: Leaders, Cities, Babel, Myths, Ruins, Sailors and Empires</description>
   <author href="http://phonegap.com" email="support@phonegap.com">PhoneGap Team</author>
