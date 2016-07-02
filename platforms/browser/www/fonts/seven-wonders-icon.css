@@ -1,0 +1,190 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "seven-wonders-icon";
+  src:url("seven-wonders-icon.eot");
+  src:url("seven-wonders-icon.eot?#iefix") format("embedded-opentype"),
+    url("seven-wonders-icon.woff") format("woff"),
+    url("seven-wonders-icon.ttf") format("truetype"),
+    url("seven-wonders-icon.svg#seven-wonders-icon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "seven-wonders-icon" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "seven-wonders-icon" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-alert:before {
+  content: "A";
+}
+.icon-issue:before {
+  content: "1";
+}
+.icon-sync:before {
+  content: "2";
+}
+.icon-search:before {
+  content: "3";
+}
+.icon-player:before {
+  content: "4";
+}
+.icon-players:before {
+  content: "6";
+}
+.icon-gear:before {
+  content: "o";
+}
+.icon-x:before {
+  content: "x";
+}
+.icon-puzzle:before {
+  content: "7";
+}
+.icon-target:before {
+  content: "O";
+}
+.icon-diff-added:before {
+  content: "[";
+}
+.icon-side:before {
+  content: "k";
+}
+.icon-projects:before {
+  content: "P";
+}
+.icon-tower:before {
+  content: "T";
+}
+.icon-base:before {
+  content: "W";
+}
+.icon-cities:before {
+  content: "C";
+}
+.icon-empire:before {
+  content: "E";
+}
+.icon-leaders:before {
+  content: "L";
+}
+.icon-myths:before {
+  content: "M";
+}
+.icon-ruins:before {
+  content: "R";
+}
+.icon-sailors:before {
+  content: "S";
+}
+.icon-three-bars:before {
+  content: "8";
+}
+.icon-database:before {
+  content: "9";
+}
+.icon-back:before {
+  content: "/";
+}
+.icon-refresh:before {
+  content: "X";
+}
+.icon-triangle-right:before {
+  content: "(";
+}
+.icon-triangle-left:before {
+  content: ")";
+}
+.icon-arrow-left:before {
+  content: "<";
+}
+.icon-arrow-right:before {
+  content: ">";
+}
+.icon-trashcan:before {
+  content: "0";
+}
+.icon-pencil:before {
+  content: "e";
+}
+.icon-sort-amount:before {
+  content: ",";
+}
+.icon-add-square:before {
+  content: "+";
+}
+.icon-remove-square:before {
+  content: "-";
+}
+.icon-trophy:before {
+  content: "r";
+}
+.icon-civic:before {
+  content: "b";
+}
+.icon-guild:before {
+  content: "g";
+}
+.icon-commerce:before {
+  content: "y";
+}
+.icon-debt:before {
+  content: "d";
+}
+.icon-science:before {
+  content: "s";
+}
+.icon-military:before {
+  content: "m";
+}
+.icon-money:before {
+  content: "c";
+}
+.icon-user-add:before {
+  content: "p";
+}
+.icon-diff-removed:before {
+  content: "]";
+}
+.icon-any-science:before {
+  content: "w";
+}
+.icon-tablet:before {
+  content: "t";
+}
+.icon-compass:before {
+  content: "u";
+}
+.icon-cog-1:before {
+  content: "v";
+}
+.icon-arrows-out:before {
+  content: "F";
+}
+.icon-home:before {
+  content: "H";
+}
