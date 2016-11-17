@@ -1771,7 +1771,7 @@ var allCards = [
     age:"I",
     game:"Cities",
     cost:["1coin", "wood"],
-    effect:"Grants 2 VP at the end of the game."
+    effect:"Grants 4 VP at the end of the game."
   },
   {
     code:"ct01ct04",

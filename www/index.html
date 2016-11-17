@@ -20,38 +20,37 @@
 </head>
 <body>
 
-	<div id="cardsearch" class="content">
-		<div id="logo-cardsearch">
+	<div class="container" id="cardsearch">
+		<header id="logo-cardsearch">
 			<img src="img/logo-cardsearch.png">
-		</div>
+		</header>
 		<div id="searchfield">
 			<form><input type="text" name="cards" class="biginput" id="autocomplete" placeholder="Type any card name."onfocus="this.value='';"></form>
 		</div><!-- @end #searchfield -->
 
-		<div id="outputbox">
-			<p id="outputcontent">Results will be displayed here.<br>You may search for cards names, color or type. Plus, Babel Tiles and Great Project Cards.</p>
+        <div class="output">
+    		<div id="outputbox">
+    			<p id="outputcontent">Results will be displayed here.<br>You may search for cards names, color or type. Plus, Babel Tiles and Great Project Cards.</p>
 
-        </div>
+            </div>
             <!-- ... -->
+        </div>
 
         <footer>
         	<p>No copyright infrigement intended. Application created for school JavaScript project.</p>
         </footer>
 
-        </div>
+    </div>
 
-
-
-
-                <script src="js/vendor/jquery-1.11.2.min.js"></script>
-                <!-- JS plugins -->
-                <script src="js/vendor/jquery.autocomplete.min.js"></script>
-                <script src="js/vendor/jquery.mobile.custom.min.js"></script>
-                <!-- JS Databasse -->
-                <script src="js/database/allwonders.js"></script>
-                <script src="js/database/allcards.js"></script>
-                <!-- JS scripts -->
-                <script src="js/plugins.js"></script>
-                <script src="js/cardsearch.js"></script>
+    <script src="js/vendor/jquery-1.11.2.min.js"></script>
+    <!-- JS plugins -->
+    <script src="js/vendor/jquery.autocomplete.min.js"></script>
+    <script src="js/vendor/jquery.mobile.custom.min.js"></script>
+    <!-- JS Databasse -->
+    <script src="js/database/allwonders.js"></script>
+    <script src="js/database/allcards.js"></script>
+    <!-- JS scripts -->
+    <script src="js/plugins.js"></script>
+    <script src="js/cardsearch.js"></script>
 </body>
 </html>

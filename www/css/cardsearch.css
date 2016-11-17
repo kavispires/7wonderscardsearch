@@ -1,19 +1,49 @@
-/* ==========================================================================
-Author's custom styles
-========================================================================== */
-
-.content {
+.container {
   height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
+
 #logo-cardsearch {
   max-width: 600px;
   margin: 10px auto;
 }
-.autocomplete-suggestions { border: 1px solid #999; background: #fff; cursor: default; overflow: auto; }
-.autocomplete-suggestion { padding: 10px 5px; font-size: 1.2em; white-space: nowrap; overflow: hidden; }
-.autocomplete-selected { background: #f0f0f0; }
-.autocomplete-suggestions strong { font-weight: normal; color: #3399ff; }
-#searchfield { display: block; width: 100%; text-align: center; margin-bottom: 20px; }
+
+#logo-cardsearch img {
+  max-height: 16vh;
+  display: block;
+  margin: 0 auto;
+}
+
+.autocomplete-suggestions { 
+  border: 1px solid #999;
+  background: #fff;
+  cursor: default;
+  overflow: auto; 
+}
+
+.autocomplete-suggestion {
+  padding: 10px 5px;
+  font-size: 1.2em;
+  white-space: nowrap;
+  overflow: hidden; 
+}
+
+.autocomplete-selected { 
+  background: #f0f0f0; 
+}
+
+.autocomplete-suggestions strong {
+ font-weight: normal;
+ color: #3399ff; }
+
+#searchfield { 
+  flex: 0 1 auto;
+  display: block; 
+  width: 100%; 
+  text-align: center; 
+  margin-bottom: 20px; 
+}
 
 #searchfield form {
   display: inline-block;
@@ -24,6 +54,7 @@ Author's custom styles
   border-radius: 3px;
   margin: 5px 0 0 0;
 }
+
 #searchfield form .biginput {
   width: 80vw;
   height: 40px;
@@ -38,37 +69,54 @@ Author's custom styles
   -moz-transition: all 0.2s linear;
   transition: all 0.2s linear;
 }
+
 #searchfield form .biginput:focus {
   color: #858585;
   outline: none !important;
   border:1px solid #655CA5;
   box-shadow: 0 0 10px #719ECE;
 }
+
+.output {
+  flex: 1 1 auto;
+}
+
 #outputbox {
-  background: white;
-  padding: 2vmax;
+  background: #fff;
+  padding: 2vmax 10vw;
   margin: 0;
   overflow: auto;
 }
+
 #search-result p {
   margin: 0;
 }
+
 #search-result-image {
-  max-width: 35vw;
+  max-width: 25vw;
   float: left;
 }
+
+#search-result-image {
+  max-height: 50vh;
+}
+
 #search-result-info {
   max-width: 55vw;
   float: left;
   margin-left: 10px;
+  font-size: 90%;
 }
+
 #search-result-info h3 {
   margin: 0 0 10px 0;
   font-family: 'alegreyablack';
 }
+
 #search-result hr {
   margin: 5px 0;
 }
+
 .search-symbol {
   width: 20px;
   margin-right: 2px;
@@ -76,8 +124,6 @@ Author's custom styles
 
 footer {
   width: 100%;
-  position: absolute;
-  bottom: 0;
   margin: 0 auto;
   color: #fff;
   font-size: .75em;
@@ -95,23 +141,30 @@ Media Queries
   #search-result-info {
     max-width: 60vw;
     margin-left: 20px;
+    font-size: 100%;
   }
+
   #search-result-image {
-    max-width: 25vw;
+    max-width: 28vw;
   }
+
   #result-header div {
     min-width: 15vw;
   }
+
   #outputbox {
     font-size: 1.25em;
   }
+
   #outputbox h3 {
-  font-size: 2em;
+    font-size: 2em;
   }
 
 }
 @media only screen and (min-width: 1024px) {
-  #result-header div {min-width: 8vw; }
+  #result-header div {
+    min-width: 8vw; 
+  }
 }
 
 @media print,

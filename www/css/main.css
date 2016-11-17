@@ -91,28 +91,6 @@ iframe {
   border: 0;
 }
 
-/* ==========================
-Panels
-========================== */
-
-.panel{
-  min-width: 100%;
-  height: 99vh;
-  overflow-y: hidden;
-  overflow-x: hidden;
-  margin-top: -180%;
-  position: absolute;
-  background: #000;
-  z-index: 20;
-  -webkit-transition: all .8s ease-in-out;
-  -moz-transition: all .8s ease-in-out;
-  -o-transition: all .8s ease-in-out;
-  transition: all .8s ease-in-out;
-}
-.panel:target{
-  margin-top: 0%;
-  background-color: rgba(212,192,63,.01);
-}
 .content{
   right: 0;
   left: 0;
@@ -120,15 +98,6 @@ Panels
   height: 98vh;
   position: absolute;
   padding-bottom: 10px;
-}
-.content-inner {
-  right: 0;
-  left: 0;
-  top: 0px;
-  height: 85vh;
-  position: absolute;
-  box-shadow: 0px 4px 7px rgba(0,0,0,.6);
-  background-color: rgba(212,192,63,.8);
 }
 
 /* ==========================
@@ -143,174 +112,6 @@ p, h2, h3, h4, h5, h6 {
   font-family: 'alegreyabold';
 }
 
-/* ==========================
-Animation
-========================== */
-
-/* Pulse Grow */
-@-webkit-keyframes pulse {
-  to {
-    -webkit-transform: scale(1.025);
-    transform: scale(1.025);
-  }
-}
-
-@keyframes pulse {
-  to {
-    -webkit-transform: scale(1.025);
-    transform: scale(1.025);
-  }
-}
-
-.pulse {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-animation-name: pulse;
-  animation-name: pulse;
-  -webkit-animation-duration: 0.3s;
-  animation-duration: 0.3s;
-  -webkit-animation-timing-function: linear;
-  animation-timing-function: linear;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-  -webkit-animation-direction: alternate;
-  animation-direction: alternate;
-}
-
-/* ==========================
-Buttons
-========================== */
-
-.btn {
-  background:  rgba(251, 232, 194, .85);
-  border: solid 4px rgba(251, 232, 194, 0);
-
-  border-radius : 10px;
-  -moz-border-radius : 10px;
-  -webkit-border-radius : 10px;
-
-  margin: 10px 1vh;
-
-  display: block;
-  margin: 0 auto 2vh auto;
-
-  font-size: 1.25em;
-  text-align: center;
-
-  vertical-align: middle;
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-property: transform;
-  transition-property: transform;
-
-  padding: 10px;
-  cursor: pointer;
-}
-.btn-1 {
-  width: 12.5vw;
-  margin: 1vw;
-}
-.btn-2 {
-  width: 27vw;
-  margin: 1vh 1vw;
-}
-.btn-3 {
-  width: 41.5vw;
-  margin: 1vw;
-}
-.btn-4 {
-  width: 56vw;
-  margin: 1vw;
-}
-.btn-5 {
-  width: 70.5vw;
-  margin: 1vw;
-}
-.btn-6 {
-  width: 85vw;
-  margin: 1vw;
-}
-.btn-selected {
-  background: rgba(255, 255, 255, .5);
-  border: solid 4px #655ca6;
-  color: #655ca6;
-}
-.btn-rand:hover {
-  background: rgba(251, 232, 194, .5);
-  border: solid 4px rgba(251, 232, 194, 1);
-  color: #655ca6;
-}
-.btn-opt:hover {
-  background: rgba(251, 232, 194, .8);
-  border: solid 4px  #fff;
-}
-
-#btn-return {
-  width: 120px;
-  height: 120px;
-  background: url('../img/backflip-btn.png') no-repeat 0 0;
-
-  z-index: 100;
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-#btn-return:hover {
-  background-position: -120px 0;
-}
-.btn-disabled {
-  background: #ada885;
-  border: solid #8e8a6e;
-  color: #8e8a6e !important;
-  opacity: .85
-}
-.btn-disabled:hover {
-  background: #ada885;
-  border: solid #8e8a6e;
-  color: #8e8a6e !important;
-  opacity: .85
-}
-
-#btn-fullscreen {
-  position: absolute;
-  top: 1vmin;
-  right: 1vmin;
-
-  padding: .9vmin .9vmin 0 .9vmin;
-
-  cursor: pointer;
-
-  z-index: 99;
-}
-#btn-fullscreen:hover {
-  color: #fff !important;
-}
-#btn-home {
-  position: absolute;
-  top: 1vmin;
-  left: 1vmin;
-
-  padding: .9vmin .9vmin 0 .9vmin;
-
-  cursor: pointer;
-
-  z-index: 99;
-}
-#btn-home:hover {
-  color: #fff !important;
-}
 iframe {
   width: 100vw;
   height: 100vh;
@@ -322,12 +123,9 @@ Media Queries
 ========================================================================== */
 
 @media only screen and (min-width: 750px) {
-  .btn { padding: 20px;  }
-  #btn-fullscreen .icon-arrows-out {  font-size: 2em;  }
-  #btn-home .icon-home {  font-size: 2em;  } 
 }
-@media only screen and (min-width: 1024px) {
 
+@media only screen and (min-width: 1024px) {
 }
 
 @media print,
