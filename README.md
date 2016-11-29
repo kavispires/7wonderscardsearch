@@ -14,7 +14,7 @@ It contains information on card and wonders from all official expansions and fan
 
 This is not affiliated to the game designer or the publisher and it has no intent of copyright infringement. This app was created as an web development exercise for my personal use and it is posted here publicly only for reference. 
 
-For a live version of this application, click [here](https://kavispires.github.io/7wcardsearch).
+For a live version of this application, click [here](https://kavispires.github.io/7wonderscardsearch).
 
 ## How to Launch the Application
 
